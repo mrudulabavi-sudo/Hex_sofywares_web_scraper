@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Scraper App</title>
+</head>
+<body>
+    <h2>Web Scraping using BeautifulSoup</h2>
+
+    <form method="POST">
+        <input type="text" name="url" placeholder="Enter website URL" required>
+        <button type="submit">Scrape</button>
+    </form>
+
+    <h3>Scraped Data:</h3>
+    <ul>
+        {% for item in data %}
+        <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
